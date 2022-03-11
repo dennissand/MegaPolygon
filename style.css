@@ -1,8 +1,120 @@
+@font-face { font-family: gamefont; src: url("res/ABSTRACT.TTF"); }
+
+header{
+  background: black;
+  color:white;
+}
+.hrhead{
+  border-top: 10px solid red;
+  margin-bottom: 20px;
+}
+.hrfooter{
+  border-top: 10px solid red;
+  margin-top: 0;
+  padding: 0;
+}
 h1{
-    text-align: center;
+  //font-family: gamefont;
+  font-size: 200px;
+  padding: 20px;
+}
+h2{
+  padding: 20px;
+  font-family: gamefont;
+  font-size: 40px;
+  color: black;
+  text-shadow: 4px 4px 1px greenyellow;
+
+}
+h3{
+  padding: 10px;
+  font-family: gamefont;
+  font-size: 20px;
+  color: black;
+  text-shadow: 4px 4px 1px greenyellow;
+
+}
+h4{
+  padding: 10px;
+  font-family: gamefont;
+  font-size: 10px;
+  color: black;
+  text-shadow: 4px 4px 1px greenyellow;
+
+}
+body{
+  text-align: center;
+  background: radial-gradient(greenyellow, black);
+}
+p{
+  padding: 30px;
+  font-size: 30px;
+}
+.gameContainer{
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+.game{
+  height: 800px;
+  width: 1200px;
+  border:2px white solid;
+}
+.devicon-javascript-plain{
+  font-size: 150px;
+  padding: 40px;
+}
+.Music_links{
+  padding: 20px;
+}
+.linkIcon{
+  padding: 20px;
+  font-size: 30px;
+}
+.techStack{
+  padding-top:200px;
+}
+.techSvg{
+  padding: 20px;
+}
+.bi-github{
+  padding: 10px;
+}
+.bi-linkedin{
+  padding: 10px;
+}
+.bi-youtube{
+  font-size: 75px;
+}
+.bi-spotify{
+  font-size: 75px;
+}
+.bi-apple{
+  font-size: 75px;
+}
+.bi-vinyl{
+  font-size: 75px;
+}
+a{
+  color: white;
+}
+a:hover{
+  color: black;
 }
 
-.game{
-    align-content: center;
-    border: solid 1px black;
+.footerlink{
+  padding: 20px;
+  color: greenyellow;
+}
+.footerlink:hover{
+  color: white;
+  outline: solid greenyellow;
+}
+footer{
+  font-size: 30px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+  background: black;
+  color: greenyellow;
 }
