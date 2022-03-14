@@ -1,7 +1,6 @@
-let f = new FontFace("gamefont", "url(res/ABSTRACT.TTF)")
+let f = new FontFace("gamefont", "url(res/fonts/ABSTRACT.TTF)")
 const canvas = document.getElementById("MegaPolygon")
 let context = canvas.getContext("2d")
-let test = 0.01
 f.load().then(function () {
 
   let particlesArray = [];
@@ -14,10 +13,7 @@ f.load().then(function () {
   function logKey(e){
     if(e.code === "Enter"){
       game()
-    }else if(e.code === "KeyW"){
-        test = test + 1
     }
-    return test
   }
   
   function generateParticles(amount) {
@@ -35,8 +31,7 @@ f.load().then(function () {
 
   function set_color(index){
       
-      let color = ""
-      
+      let color
       if(index%2===0){
            color = "#00ff00"
       }else{
@@ -47,11 +42,10 @@ f.load().then(function () {
   
   function set_rotate_speed(index) {
     //2.52 Erzeugt unter den richtigen umständen ein Pentagram 
-    let value = test + (index /2500)
+    let value = 0.01 + (index /2500)
       if(index % 2===0){
         value = value *-1
     }
-      
     return value
   }
   
@@ -114,7 +108,7 @@ f.load().then(function () {
 
       context.fillText("Press Enter", canvas.width / 2,  canvas.height / 1.1)
       let grd = context.createLinearGradient(10, 0, 0, 200);
-      grd.addColorStop(0, "#E931FF");
+      grd.addColorStop(0, "#00ff00");
       grd.addColorStop(1, "black");
       context.fillStyle = grd
       context.font = "50px gamefont"
@@ -122,10 +116,9 @@ f.load().then(function () {
       context.strokeText("Mega Polygon", canvas.width/2, canvas.height/6)
   }
   
-  function game(){
-    
-    alert("Game Start")
-    
+  function game() {
+
+      alert("Game Start")
+
   }
-  
 })

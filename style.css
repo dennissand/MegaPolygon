@@ -1,17 +1,11 @@
-@font-face { font-family: gamefont; src: url("res/ABSTRACT.TTF"); }
+@font-face {
+  font-family: gamefont;
+  src: url("res/fonts/ABSTRACT.TTF");
+}
 
 header{
   background: black;
   color:white;
-}
-.hrhead{
-  border-top: 10px solid red;
-  margin-bottom: 20px;
-}
-.hrfooter{
-  border-top: 10px solid red;
-  margin-top: 0;
-  padding: 0;
 }
 h1{
   //font-family: gamefont;
@@ -24,15 +18,13 @@ h2{
   font-size: 40px;
   color: black;
   text-shadow: 4px 4px 1px greenyellow;
-
 }
 h3{
   padding: 10px;
-  font-family: gamefont;
+  font-family: "gamefont";
   font-size: 20px;
   color: black;
   text-shadow: 4px 4px 1px greenyellow;
-
 }
 h4{
   padding: 10px;
@@ -40,7 +32,6 @@ h4{
   font-size: 10px;
   color: black;
   text-shadow: 4px 4px 1px greenyellow;
-
 }
 body{
   text-align: center;
@@ -50,10 +41,10 @@ p{
   padding: 30px;
   font-size: 30px;
 }
+
 .gameContainer{
   margin-top: 40px;
   margin-bottom: 40px;
-
 }
 .game{
   height: 800px;
@@ -64,6 +55,7 @@ p{
   font-size: 150px;
   padding: 40px;
 }
+
 .Music_links{
   padding: 20px;
 }
@@ -71,12 +63,14 @@ p{
   padding: 20px;
   font-size: 30px;
 }
+
 .techStack{
   padding-top:200px;
 }
 .techSvg{
   padding: 20px;
 }
+
 .bi-github{
   padding: 10px;
 }
@@ -95,6 +89,7 @@ p{
 .bi-vinyl{
   font-size: 75px;
 }
+
 a{
   color: white;
 }
@@ -102,14 +97,16 @@ a:hover{
   color: black;
 }
 
-.footerlink{
-  padding: 20px;
-  color: greenyellow;
+.hrhead{
+  border-top: 10px solid red;
+  margin-bottom: 20px;
 }
-.footerlink:hover{
-  color: white;
-  outline: solid greenyellow;
+.hrfooter{
+  border-top: 10px solid red;
+  margin-top: 0;
+  padding: 0;
 }
+
 footer{
   font-size: 30px;
   margin-top: 50px;
@@ -117,4 +114,12 @@ footer{
   text-align: center;
   background: black;
   color: greenyellow;
+}
+.footerlink{
+  padding: 20px;
+  color: greenyellow;
+}
+.footerlink:hover{
+  color: white;
+  outline: solid greenyellow;
 }
